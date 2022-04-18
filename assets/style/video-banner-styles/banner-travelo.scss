@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.video {
+    width: 100%;
+    .video-info {
+        width: 100%;
+        height: auto;
+        position: relative;
+        h2 {
+            position: absolute;
+            top: 27%;
+            right: 36%;
+            color: #fff;
+            font-size: 78px;
+            font-family: "Nothing You Could Do",cursive;
+        }
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: black;
+            opacity: 0.4;
+        }
+        img {
+            width: 100%;
+            height: 610px;
+        }
+        .play {
+            &:hover {
+                cursor: pointer;
+            }
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: #1ec6b6;
+            position: absolute;
+            left: 45%;
+            bottom: 36%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+                color: #fff;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 992px) {
+    .video-info {
+        text-align: center;
+        img {
+            width: 100%;
+        }
+        h2 {
+            font-size: 46px !important;
+        }
+    }
+}
+
+@media only screen and(max-width: 786px) {
+    .video-info {
+        text-align: center;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and(max-width: 520px) {
+    .video-info {
+        h2{
+            left: 44%;
+            font-size: 36px !important;
+        }.play{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.container .trips {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.container .trips h2 {
+  font-size: 38px;
+  font-weight: 400;
+  color: #040e27;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.container .trips .trips-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.container .trips .trips-info .trips-img:hover a {
+  color: #ff4a52;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .trips .trips-info .trips-img a {
+  color: #040e27;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.container .trips .trips-info .trips-img p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7a838b;
+}
+
+.container .trips .trips-info .trips-img img {
+  width: 320px;
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+    padding: 40px;
+  }
+  .container .trips-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container .trips-info .trips-img {
+    width: 330px;
+    gap: 5px;
+  }
+  .container .trips-info .trips-img img {
+    width: 300px;
+  }
+  .container .trips-info .trips-img a {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .container {
+    width: 100%;
+    padding: 40px;
+  }
+  .container .trips-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .trips-info .trips-img {
+    width: 100%;
+    display: contents;
+  }
+  .container .trips-info .trips-img img {
+    width: 80%;
+  }
+  .container .trips-info .trips-img .trips-text {
+    text-align: center;
+  }
+  .container .trips-info .trips-img .trips-text a {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=recent.css.map */

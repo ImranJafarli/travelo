@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.testimonial {
+  max-width: 100%;
+  background-color: #f7fafd;
+}
+
+.testimonial .container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.testimonial .container .fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  text-align: center;
+  height: 471px;
+  padding: 55px 0;
+  position: relative;
+}
+
+.testimonial .container .fade .text p {
+  color: #040e27;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 25px 0;
+}
+
+.testimonial .container .fade .text h3 {
+  color: #7a838b;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.testimonial .container .fade .text .quote {
+  width: 50px;
+  height: 50px;
+  background-color: #1ec6b6;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 45%;
+  top: 125px;
+}
+
+.testimonial .container .fade .text .quote .fa-quote-left {
+  color: #fff;
+  font-size: 18px;
+}
+
+.testimonial .container .fade .dots .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.testimonial .container .fade .dots .active {
+  background-color: #ff4a52;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .mySlides .j-lo {
+    height: 106px !important;
+  }
+}
+/*# sourceMappingURL=testimonial.css.map */

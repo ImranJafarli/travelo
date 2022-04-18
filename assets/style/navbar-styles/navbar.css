@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Rubik", sans-serif;
+}
+
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  z-index: 3;
+  background-color: aliceblue;
+}
+
+.header .container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.header .container .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container .navbar .logo {
+  margin-left: 30px;
+}
+
+.header .container .navbar nav {
+  margin-left: 40px;
+}
+
+.header .container .navbar nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.header .container .navbar nav ul li {
+  margin-right: 25px;
+}
+
+.header .container .navbar nav ul li ul {
+  position: absolute;
+  display: block;
+  background: #fff;
+  width: 200px;
+  height: 80px;
+  margin-top: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px 0;
+  font-size: 14px;
+  z-index: 2;
+}
+
+.header .container .navbar nav ul li ul li {
+  padding: 10px 3px 0 5px;
+}
+
+.header .container .navbar nav ul li ul li a {
+  padding: 10px;
+}
+
+.header .container .navbar nav ul li:hover ul {
+  height: 80px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.header .container .navbar nav ul a {
+  color: #5c5b5b;
+}
+
+.header .container .navbar nav ul a:hover {
+  color: #1ec6b6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .container .navbar .phone i {
+  color: #ff4a52;
+  font-size: 14px;
+}
+
+.header .container .navbar .phone a {
+  color: #5c5b5b;
+  border-right: 0.3px solid #dde1e5;
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.header .container .navbar .phone a:hover {
+  color: #ff4a52;
+}
+
+.header .social {
+  margin-right: 20px;
+}
+
+.header .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+
+.header .social ul li a i {
+  color: #aab1b7;
+}
+
+.header .social ul li a i:hover {
+  color: #ff4a52;
+}
+
+.header .menu img {
+  width: 28px;
+  height: 22px;
+  margin: 0 25px;
+  display: none;
+}
+
+.header .menu .submenu {
+  display: none;
+}
+
+.header .search {
+  width: 80px;
+  height: 109px;
+  background-color: #ff4a52;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.header .search i {
+  color: #fff;
+}
+
+.main-banner {
+  position: relative;
+}
+
+.main-banner .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+}
+
+.main-banner img {
+  width: 100%;
+  height: 650px;
+}
+
+.main-banner .main-text {
+  position: absolute;
+  bottom: 23%;
+  text-align: center;
+  width: 100%;
+}
+
+.main-banner .main-text h2 {
+  color: #fff;
+  font-size: 88px;
+  font-family: "Nothing You Could Do",cursive;
+  padding: 15px 0;
+}
+
+.main-banner .main-text p {
+  color: #fff;
+  font-size: 18px;
+  font-family: cursive;
+}
+
+.main-banner .main-text button {
+  border: 1px solid #1ec6b6;
+  margin-top: 45px;
+  width: 180px;
+  height: 56px;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #1ec6b6;
+  border: 1px solid #1ec6b6;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-banner .main-text button:hover {
+  border: #ff4a52;
+  background-color: #ff4a52;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-banner .slide-arrow {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  bottom: 36%;
+}
+
+.main-banner .slide-arrow .left-slide {
+  width: 35px;
+  height: 70px;
+  background: #4b4c4c;
+  opacity: 0.4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.main-banner .slide-arrow .left-slide:hover {
+  background-color: white;
+  color: #5c5b5b;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-banner .slide-arrow .left-slide i {
+  font-size: 18px;
+}
+
+.main-banner .slide-arrow .right-slide {
+  width: 35px;
+  height: 70px;
+  background: #4b4c4c;
+  opacity: 0.4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.main-banner .slide-arrow .right-slide:hover {
+  background-color: white;
+  color: #5c5b5b;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header nav {
+    display: none;
+  }
+  .header .phone {
+    display: none;
+  }
+  .header .social {
+    display: none;
+  }
+  .header .menu {
+    display: block;
+    position: relative;
+    right: 4%;
+  }
+  .header .menu:hover .submenu {
+    display: block;
+    position: absolute;
+    top: 66px;
+    left: 18px;
+  }
+  .header .menu:hover .submenu ul {
+    border: 1px solid #5c5b5b;
+    color: #fff;
+    background-color: #5c5b5b;
+  }
+  .header .menu:hover .submenu ul li {
+    padding-bottom: 5px;
+  }
+  .header .menu:hover .submenu ul li .dropdown {
+    display: none;
+  }
+  .header .menu img {
+    width: 28px;
+    height: 22px;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .submenu {
+    display: block;
+    position: absolute;
+    top: 66px;
+    left: 22px;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

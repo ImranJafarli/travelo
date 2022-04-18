@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Modal js -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap)"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Merriweather:wght@300;400&family=Nunito&family=Poppins:wght@300;400&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;1,300&display=swap"
+        rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/style/main.css">
+    <title>Travelo</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="./index.html" target="blank"><img src="./assets/image/logo/download.webp"
+                                alt="logo"></a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html" target="blank">About</a></li>
+                            <li><a href="./destination.html" target="blank">Destination</a></li>
+                            <li>
+                                <a href="#">Pages<i class="fa-solid fa-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="#">Destinations Details</a></li>
+                                    <li><a href="#">Elements</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Blog<i class="fa-solid fa-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Single-Blog</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="https://api.whatsapp.com/send/?phone=994554867752&text&app_absent=0"> 10(256)-928 256</a>
+                    </div>
+                </div>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="https://www.instagram.com/bookingcom/" target="blank"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/booking.com/?originalSubdomain=nl" target="blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.facebook.com/bookingcom/" target="blank"><i
+                                class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.booking.com/" target="blank"><i class="fa-brands fa-google-plus-g"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu">
+                <img src="./assets/image/logo/menu.png" alt="menu">
+                <div class="submenu">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html" target="blank">About</a></li>
+                        <li><a href="./destination.html" target="blank">Destination</a></li>
+                        <li>
+                            <a href="#">Pages<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown" >
+                                <li><a href="#">Destinations Details</a></li>
+                                <li><a href="#">Elements</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Blog<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown" >
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Single-Blog</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <!-- Start introduction -->
+
+        <section>
+            <div class="main-banner">
+                <div class="overlay"></div>
+                <img src="./assets/image/slider/indonesia.jpg" class="main-img" alt="indonesia">
+                <div class="main-text">
+                    <h2>Indonesia</h2>
+                    <p>Pixel perfect design with awesome contents</p>
+                    <button>Explore Me</button>
+                </div>
+                <div class="slide-arrow">
+                    <div class="left-slide">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="right-slide">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End introduction -->
+
+        <!-- Start travel plan section -->
+
+        <section>
+            <div class="travel-plan">
+                <div class="container-plan">
+                    <div class="travel-input">
+                        <div class="plan-text">
+                            <h1>Where you want to go?</h1>
+                        </div>
+                        <div class="plan-info">
+                            <input type="text" placeholder="Where to go?" title="Indonesia?">
+                            <input type="text" id="datepicker" placeholder="Date">
+                            <select id="travel" name="travel">
+                                <option value="choose">Travel type</option>
+                                <option value="Some">Some option</option>
+                                <option value="Another">Another option</option>
+                            </select>
+                        </div>
+                        <a class="travel-search" href="#">Search</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End travel plan section -->
+
+        <!-- Start Popular Destination section -->
+
+        <section>
+            <div class="container">
+                <div class="travel-info">
+                    <h2>Popular Destination</h2>
+                    <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit
+                        hella
+                        wolf moon beard words.</p>
+                </div>
+                <div class="cards">
+                    <div class="cards-info">
+                        <div class="overlay"></div>
+                        <img src="./assets/image/popular destination img/france.png" alt="Italy">
+                        <div class="info-places">
+                            <p>Italy<span>07 Places</span></p>
+                        </div>
+                    </div>
+                    <div class="cards-info">
+                        <div class="overlay"></div>
+                        <img src="./assets/image/popular destination img/Brazil.webp" alt="Brazil">
+                        <div class="info-places">
+                            <p>Brazil<span>03 Places</span></p>
+                        </div>
+                    </div>
+                    <div class="cards-info">
+                        <div class="overlay"></div>
+                        <img src="./assets/image/popular destination img/america.webp" alt="america">
+                        <div class="info-places">
+                            <p>America<span>10 Places</span></p>
+                        </div>
+                    </div>
+                    <div class="cards-info">
+                        <div class="overlay"></div>
+                        <img src="./assets/image/popular destination img/nepal.webp" alt="Nepal">
+                        <div class="info-places">
+                            <p>Nepal<span>02 Places</span></p>
+                        </div>
+                    </div>
+                    <div class="cards-info">
+                        <div class="overlay"></div>
+                        <img src="./assets/image/popular destination img/maldivs.webp" alt="Maldiv">
+                        <div class="info-places">
+                            <p>Maldiv <span>02 Places</span></p>
+                        </div>
+                    </div>
+                    <div class="cards-info">
+                        <div class="overlay"></div>
+                        <img src="./assets/image/popular destination img/indonesia.webp" alt="Indonesia">
+                        <div class="info-places">
+                            <p>Indonesia<span>05 Places</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- End Popular Destination section -->
+
+        <!-- Start subscribe section -->
+
+        <section>
+            <div class="subscribe">
+                <div class="overlay-subs"></div>
+                <img src="./assets/image/subscribe img/news banner.png" class="subs-img" alt="">
+                <div class="container">
+                    <div class="subscribe-info">
+                        <div class="subscribe-text">
+                            <h3>Subscribe Our Newsletter</h3>
+                            <p>Subscribe newsletter to get offers and about new places to discover.</p>
+                        </div>
+                        <div class="subscribe-box">
+                            <input type="email" placeholder="Your mail"
+                                title="Do you want to subscribe to our newsletter? Click here">
+                            <button onclick="document.getElementById('id01').style.display='block'">Subscribe</button>
+                            <div id="id01" class="w3-modal">
+                                <div class="w3-modal-content">
+                                    <div class="w3-container">
+                                        <span onclick="document.getElementById('id01').style.display='none'"
+                                            class="w3-button w3-display-topright">&times;</span>
+                                        <p>Your subscription has been completed successfully. Thank you</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End subscribe section -->
+
+        <!-- Start popular places section -->
+
+        <section>
+            <div class="places">
+                <div class="container">
+                    <div class="place-head-text">
+                        <h2>Popular Places</h2>
+                        <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit
+                            hella wolf moon beard words.</p>
+                    </div>
+                    <div class="places-info">
+                        <div class="place-img">
+                            <img src="./assets/image/place img/California.webp" alt="California">
+                            <div class="info-img">
+                                <h4><a href="#">California</a></h4>
+                                <p>United State of America</p>
+                            </div>
+                            <div class="place-price">
+                                <span>$500</span>
+                            </div>
+                            <div class="place-img-info">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>(20 Review)</p>
+                                </div>
+                                <div class="review">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>5 Days</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="place-img">
+                            <img src="./assets/image/place img/Korola megna.png" alt="Korola megna">
+                            <div class="info-img">
+                                <h4><a href="#">Korola megna</a></h4>
+                                <p>United State of America</p>
+                            </div>
+                            <div class="place-price">
+                                <span>$500</span>
+                            </div>
+                            <div class="place-img-info">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>(20 Review)</p>
+                                </div>
+                                <div class="review">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>5 Days</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="place-img">
+                            <img src="./assets/image/place img/London.webp" alt="London">
+                            <div class="info-img">
+                                <h4><a href="#">London</a></h4>
+                                <p>United State of America</p>
+                            </div>
+                            <div class="place-price">
+                                <span>$500</span>
+                            </div>
+                            <div class="place-img-info">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>(20 Review)</p>
+                                </div>
+                                <div class="review">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>5 Days</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="place-img">
+                            <img src="./assets/image/place img/Miami beach.png" alt="Miami beach">
+                            <div class="info-img">
+                                <h4><a href="#">Miami beach</a></h4>
+                                <p>United State of America</p>
+                            </div>
+                            <div class="place-price">
+                                <span>$500</span>
+                            </div>
+                            <div class="place-img-info">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>(20 Review)</p>
+                                </div>
+                                <div class="review">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>5 Days</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="place-img">
+                            <img src="./assets/image/place img/California2.webp" alt="California">
+                            <div class="info-img">
+                                <h4><a href="#">California</a></h4>
+                                <p>United State of America</p>
+                            </div>
+                            <div class="place-price">
+                                <span>$500</span>
+                            </div>
+                            <div class="place-img-info">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>(20 Review)</p>
+                                </div>
+                                <div class="review">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>5 Days</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="place-img">
+                            <img src="./assets/image/place img/Saintmartine island.webp" alt="Saintmartine island">
+                            <div class="info-img">
+                                <h4><a href="#">Saintmartine island</a></h4>
+                                <p>United State of America</p>
+                            </div>
+                            <div class="place-price">
+                                <span>$500</span>
+                            </div>
+                            <div class="place-img-info">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>(20 Review)</p>
+                                </div>
+                                <div class="review">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>5 Days</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="more">
+                    <button><a href="./index.html">More Places</a></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- End popular places section -->
+
+        <!-- Start Video banner section -->
+
+        <section>
+            <div class="video">
+                <div class="video-info">
+                    <div class="overlay"></div>
+                    <img src="./assets/image/video-banner/video.jpg" alt="video_area">
+                    <h2>Enjoy Video</h2>
+                    <div class="play">
+                        <a href="https://www.youtube.com/watch?v=f59dDEk57i0&t=4s" target="blank"><i
+                                class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End Video banner section -->
+
+        <!-- Start travel info section -->
+
+        <section>
+            <div class="container">
+                <div class="travel-hotel">
+                    <div class="travel-img">
+                        <img src="./assets/image/Travel info bg img/1.svg" alt="train">
+                        <h3>Comfortable Journey</h3>
+                        <p>A wonderful serenity has taken to the possession of my entire soul.</p>
+                    </div>
+                    <div class="travel-img">
+                        <img src="./assets/image/Travel info bg img/2.svg" alt="train">
+                        <h3>Luxuries Hotel</h3>
+                        <p>A wonderful serenity has taken to the possession of my entire soul.</p>
+                    </div>
+                    <div class="travel-img">
+                        <img src="./assets/image/Travel info bg img/3.svg" alt="train">
+                        <h3>Travel Guide</h3>
+                        <p>A wonderful serenity has taken to the possession of my entire soul.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End travel info section -->
+
+        <!-- Start Testimonial section -->
+
+        <section>
+            <div class="testimonial">
+                <div class="container">
+                    <div class="mySlides fade">
+                        <img src="./assets/image/testimonial-img/jennifer.png" class="j-lo" alt="comment">
+                        <div class="text">
+                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to
+                                help
+                                alleviate human suffering.</p>
+                            <h3>- Tom Mouse</h3>
+                            <div class="quote">
+                                <i class="fa fa-quote-left"></i>
+                            </div>
+                        </div>
+                        <div class="dots">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="./assets/image/testimonial-img/jennifer.png" class="j-lo" alt="comment">
+                        <div class="text">
+                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to
+                                help
+                                alleviate human suffering.</p>
+                            <h3>- Jerry Mouse</h3>
+                            <div class="quote">
+                                <i class="fa fa-quote-left"></i>
+                            </div>
+                        </div>
+                        <div class="dots">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="./assets/image/testimonial-img/jennifer.png" class="j-lo" alt="comment">
+                        <div class="text">
+                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to
+                                help
+                                alleviate human suffering.</p>
+                            <h3>- Micky Mouse</h3>
+                            <div class="quote">
+                                <i class="fa fa-quote-left"></i>
+                            </div>
+                        </div>
+                        <div class="dots">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End testimonial section -->
+
+        <!-- Start recent trips section -->
+
+        <section>
+            <div class="container">
+                <div class="trips">
+                    <h2>Recent Trips</h2>
+                    <div class="trips-info">
+                        <div class="trips-img">
+                            <img src="./assets/image/recent trip img/1.png" alt="china">
+                            <div class="trips-text">
+                                <p>Oct 12, 2019</p>
+                                <a href="#" target="_blank">Journeys Are Best Measured In New Friends</a>
+                            </div>
+                        </div>
+                        <div class="trips-img">
+                            <img src="./assets/image/recent trip img/2.webp" alt="china">
+                            <div class="trips-text">
+                                <p>Oct 12, 2019</p>
+                                <a href="#" target="_blank">Journeys Are Best Measured In New Friends</a>
+                            </div>
+                        </div>
+                        <div class="trips-img">
+                            <img src="./assets/image/recent trip img/3.png" alt="china">
+                            <div class="trips-text">
+                                <p>Oct 12, 2019</p>
+                                <a href="#" target="_blank">Journeys Are Best Measured In New Friends</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End recent trips section -->
+    </main>
+
+    <!-- Start footer -->
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-info">
+                    <div class="main-footer">
+                        <div class="footer-logo">
+                            <a href="./index.html"><img src="./assets/image/logo/footer_logo.png.webp" alt="logo"></a>
+                            <p>5th flora, 700/D kings road, <br> green
+                                lane New York-1782</p>
+                            <a href="tel:++10 367 826 2567">+10 367 826 2567</a>
+                            <br>
+                            <a href="mailto:contact@carpenter.com">contact@carpenter.com</a>
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/bookingcom/" target="blank"><i
+                                                class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="https://twitter.com/bookingcom" target="blank"><i
+                                                class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/bookingcom/" target="blank"><i
+                                                class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="https://www.pinterest.co.uk/bookingdotcom/" target="blank"><i
+                                                class="fa-brands fa-pinterest"></i></a>
+                                    </li>
+                                    <li><a href="https://www.youtube.com/channel/UCde5lyhz54IYdyrbGA5F5rg"
+                                            target="blank"><i class="fa-brands fa-youtube"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="company">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="./index.html">Pricing</a></li>
+                                <li><a href="./index.html">About</a></li>
+                                <li><a href="./index.html">Gallery</a></li>
+                                <li><a href="./index.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-second">
+                        <div class="destination-footer">
+                            <h4>Popular Destination</h4>
+                            <div class="list-footer">
+                                <ul>
+                                    <li><a href="./index.html">Indonesia</a></li>
+                                    <li><a href="./index.html">India</a></li>
+                                    <li><a href="./index.html">Italy</a></li>
+                                    <li><a href="./index.html">French</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="./index.html">America</a></li>
+                                    <li><a href="./index.html">Switzerland</a></li>
+                                    <li><a href="./index.html">Canada</a></li>
+                                    <li><a href="./index.html">England</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="instagram">
+                            <h4>Instagram</h4>
+                            <div class="insta-img">
+                                <ul>
+                                    <li><a href="#"><img src="./assets/image/footer img/download (1).webp"
+                                                alt="insta"></a>
+                                    </li>
+                                    <li><a href="#"><img src="./assets/image/footer img/download (2).webp"
+                                                alt="insta"></a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#"><img src="./assets/image/footer img/download (3).webp"
+                                                alt="insta"></a>
+                                    </li>
+                                    <li><a href="#"><img src="./assets/image/footer img/download (4).webp"
+                                                alt="insta"></a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#"><img src="./assets/image/footer img/download (5).webp"
+                                                alt="insta"></a>
+                                    </li>
+                                    <li><a href="#"><img src="./assets/image/footer img/download.webp" alt="insta"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <hr>
+                    <p>Copyright ©2022 All rights reserved | This template is made with <i
+                            class="fa-regular fa-heart"></i> by <a href="#">Colorlib</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- End footer -->
+
+    <!-- Testimonial slider -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/66f8655eb0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

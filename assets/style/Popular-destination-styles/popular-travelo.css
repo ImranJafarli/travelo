@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.travel-info {
+  height: auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.travel-info h2 {
+  font-size: 38px;
+  font-weight: 400;
+  color: #040e27;
+}
+
+.travel-info p {
+  font-size: 16px;
+  color: #7a838b;
+  font-weight: 400;
+}
+
+.cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 12px;
+}
+
+.cards .cards-info {
+  width: 362px;
+  position: relative;
+  margin-bottom: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.cards .cards-info:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  color: #ff4a52;
+}
+
+.cards .cards-info:hover p {
+  color: #ff4a52;
+}
+
+.cards .cards-info:hover span {
+  background-color: #ff4a52;
+}
+
+.cards .cards-info p {
+  color: #fff;
+}
+
+.cards .cards-info p span {
+  border-radius: 18px;
+  padding: 2px 9px;
+  margin-left: 11px;
+  background-color: #1ec6b6;
+  color: #fff;
+}
+
+.cards .cards-info .overlay {
+  position: absolute;
+  width: 97%;
+  height: 100%;
+  background: black;
+  opacity: 0.4;
+  border-radius: 8px;
+}
+
+.cards .cards-info img {
+  width: 350px;
+  border-radius: 8px;
+}
+
+.cards .cards-info .info-places {
+  position: absolute;
+  bottom: 26px;
+  left: 5%;
+}
+
+@media only screen and (max-width: 1110px) {
+  .container {
+    width: 100%;
+  }
+  .container .travel-info {
+    text-align: center;
+  }
+  .container .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px 50px;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cards .cards-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cards .cards-info .overlay,
+  .cards .cards-info img {
+    width: 90%;
+  }
+  .cards .cards-info .overlay {
+    height: 100%;
+  }
+  .cards .cards-info .info-places {
+    left: 10%;
+    bottom: 10%;
+  }
+}
+/*# sourceMappingURL=popular-travelo.css.map */

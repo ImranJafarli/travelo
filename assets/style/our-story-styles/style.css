@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.story {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.story .container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.story .container .stories {
+  width: 100%;
+}
+
+.story .container .stories h2 {
+  color: #040e27;
+  font-size: 38px;
+  padding: 30px 0;
+}
+
+.story .container .stories .stories-text {
+  max-width: 745px;
+}
+
+.story .container .stories .stories-text p {
+  padding: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #7a838b;
+}
+
+.story .container .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.story .container .numbers .counter {
+  width: 100%;
+}
+
+.story .container .numbers .counter span {
+  text-align: center;
+  display: block;
+  color: #ff4a52;
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.story .container .numbers .counter p {
+  color: #7a838b;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.story .container .client {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.story .container .client .girl {
+  width: 347px;
+  height: 416px;
+}
+
+.story .container .client .boy {
+  width: 492px;
+  height: 416px;
+}
+
+@media only screen and (max-width: 520px) {
+  .numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

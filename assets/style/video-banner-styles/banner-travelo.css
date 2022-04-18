@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.video {
+  width: 100%;
+}
+
+.video .video-info {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.video .video-info h2 {
+  position: absolute;
+  top: 27%;
+  right: 36%;
+  color: #fff;
+  font-size: 78px;
+  font-family: "Nothing You Could Do",cursive;
+}
+
+.video .video-info .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.4;
+}
+
+.video .video-info img {
+  width: 100%;
+  height: 610px;
+}
+
+.video .video-info .play {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #1ec6b6;
+  position: absolute;
+  left: 45%;
+  bottom: 36%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video .video-info .play:hover {
+  cursor: pointer;
+}
+
+.video .video-info .play i {
+  color: #fff;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 992px) {
+  .video-info {
+    text-align: center;
+  }
+  .video-info img {
+    width: 100%;
+  }
+  .video-info h2 {
+    font-size: 46px !important;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .video-info {
+    text-align: center;
+  }
+  .video-info img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .video-info h2 {
+    left: 44%;
+    font-size: 36px !important;
+  }
+  .video-info .play {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=banner-travelo.css.map */

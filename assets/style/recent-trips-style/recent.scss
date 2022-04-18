@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    .trips {
+        width: 100%;
+        padding: 60px 0;
+        h2 {
+            font-size: 38px;
+            font-weight: 400;
+            color: #040e27;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .trips-info {
+            display: flex;
+            gap: 15px;
+            .trips-img {
+                &:hover a {
+                    color: #ff4a52;
+                    transition: 0.5s;
+                }
+                a {
+                    color: #040e27;
+                    font-size: 22px;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #7a838b;
+                }
+                img{
+                    width: 320px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        width: 100%;
+        padding: 40px;
+        .trips-info {
+            display: flex;
+            flex-wrap: wrap;
+            .trips-img{
+                width: 330px;
+                gap: 5px;
+                img{
+                    width: 300px;
+                }
+                a{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 786px){
+    .container {
+        width: 100%;
+        padding: 40px;
+        .trips-info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .trips-img{
+                width: 100%;
+                display: contents;
+                img{
+                    width: 80%;
+                }
+                .trips-text{
+                    text-align: center;
+                    a{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+

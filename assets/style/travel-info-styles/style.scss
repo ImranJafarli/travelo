@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    .travel-hotel {
+        padding: 60px 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .travel-img {
+            width: 338px;
+            text-align: center;
+            h3 {
+                font-size: 22px;
+                font-weight: 400;
+                color: #040e27;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                color: #6e6e6e;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        width: 100%;
+        padding: 40px;
+        .travel-hotel {
+            display: flex;
+            flex-wrap: wrap;
+            .travel-img {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    .container {
+        width: 100%;
+        padding: 40px;
+        .travel-hotel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

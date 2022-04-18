@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.travel-info {
+    height: auto;
+    padding: 40px;
+    text-align: center;
+    h2 {
+        font-size: 38px;
+        font-weight: 400;
+        color: #040e27;
+    }
+    p {
+        font-size: 16px;
+        color: #7a838b;
+        font-weight: 400;
+    }
+}
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+    .cards-info {
+        width: 362px;
+        position: relative;
+        margin-bottom: 20px;
+        transition: 0.5s;
+        &:hover {
+            transform: translateY(-10px);
+            transition: 0.5s;
+            cursor: pointer;
+            color: #ff4a52;
+        }
+        &:hover p {
+            color: #ff4a52;
+        }
+        &:hover span {
+            background-color: #ff4a52;
+        }
+        p {
+            color: #fff;
+            span {
+                border-radius: 18px;
+                padding: 2px 9px;
+                margin-left: 11px;
+                background-color: #1ec6b6;
+                color: #fff;
+            }
+        }
+        .overlay {
+            position: absolute;
+            width: 97%;
+            height: 100%;
+            background: black;
+            opacity: 0.4;
+            border-radius: 8px;
+        }
+        img {
+            width: 350px;
+            border-radius: 8px;
+        }
+        .info-places {
+            position: absolute;
+            bottom: 26px;
+            left: 5%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    .container {
+        width: 100%;
+        .travel-info {
+            text-align: center;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            padding: 20px 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .cards-info {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .overlay,
+            img {
+                width: 90%;
+            }
+            .overlay {
+                height: 100%;
+            }
+            .info-places {
+                left: 10%;
+                bottom: 10%;
+            }
+        }
+    }
+}

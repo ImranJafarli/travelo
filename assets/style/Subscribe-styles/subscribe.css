@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.subscribe {
+  max-width: 100%;
+  position: relative;
+  padding: 60px 0;
+}
+
+.subscribe .overlay-subs {
+  position: absolute;
+  width: 100%;
+  height: 66%;
+  background: #212529;
+  opacity: 0.7;
+}
+
+.subscribe img {
+  width: 100%;
+  height: 230px;
+}
+
+.subscribe .container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.subscribe .container .subscribe-info {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 100px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe .container .subscribe-info .subscribe-text {
+  width: 30%;
+}
+
+.subscribe .container .subscribe-info .subscribe-text h3 {
+  color: #fff;
+  padding: 12px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.subscribe .container .subscribe-info .subscribe-text p {
+  color: #aab1b7;
+  font-size: 16px;
+}
+
+.subscribe .container .subscribe-info .subscribe-box input {
+  width: 416px;
+  height: 50px;
+  padding: 0 15px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+}
+
+.subscribe .container .subscribe-info .subscribe-box button {
+  width: 110px;
+  height: 50px;
+  padding: 10px 4px;
+  border: 1px solid #ff4a52;
+  border-radius: 6px;
+  background-color: #ff4a52;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.subscribe .container .subscribe-info .subscribe-box button:hover {
+  background-color: #1ec6b6;
+  border: #1ec6b6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.subscribe .container .subscribe-info .subscribe-box .w3-modal .w3-modal-content {
+  width: 685px;
+  height: 51px;
+}
+
+.subscribe .container .subscribe-info .subscribe-box .w3-modal .w3-modal-content .w3-container .w3-display-topright {
+  top: 8px;
+}
+
+.subscribe .container .subscribe-info .subscribe-box .w3-modal .w3-modal-content .w3-container p {
+  padding: 15px 0;
+  color: #59b731;
+}
+
+@media only screen and (max-width: 992px) {
+  .overlay-subs {
+    height: 230px !important;
+  }
+  .container {
+    width: 100%;
+  }
+  .container .subscribe-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 40px;
+  }
+  .container .subscribe-info .subscribe-text {
+    width: 100% !important;
+    padding-left: 18px;
+    padding-bottom: 6px;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .subscribe {
+    height: auto;
+  }
+  .subscribe .subscribe-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 10px;
+  }
+  .subscribe .subscribe-box button,
+  .subscribe .subscribe-box input {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .overlay-subs {
+    height: 290px !important;
+  }
+  .subs-img {
+    height: 290px !important;
+  }
+  .subscribe-box input,
+  .subscribe-box button {
+    width: 230px !important;
+    margin-bottom: 5px;
+  }
+}
+/*# sourceMappingURL=subscribe.css.map */
