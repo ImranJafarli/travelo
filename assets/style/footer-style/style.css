@@ -40,7 +40,7 @@
 }
 
 .footer .container .footer-info .main-footer .footer-logo {
-  padding: 20px 0;
+  padding: 37px 0;
 }
 
 .footer .container .footer-info .main-footer .footer-logo a:hover {
@@ -55,6 +55,11 @@
   color: #aab1b7;
   font-size: 14px;
   padding: 10px 0;
+  cursor: pointer;
+}
+
+.footer .container .footer-info .main-footer .footer-logo p:hover {
+  color: #ff4a52;
 }
 
 .footer .container .footer-info .main-footer .footer-logo a {
@@ -180,6 +185,7 @@
 .footer .container .copyright hr {
   max-width: 1000px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .footer .container .copyright p {
@@ -193,8 +199,17 @@
   color: #fd0c0c;
 }
 
-.footer .container .copyright p i:hover {
+.footer .container .copyright p a:hover {
+  color: #1ce6b6;
+}
+
+.footer .container .copyright p i {
+  cursor: pointer;
   color: #fd0c0c;
+}
+
+.footer .container .copyright p i:hover {
+  color: #1ce6b6;
 }
 
 @media only screen and (max-width: 992px) {

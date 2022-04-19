@@ -14,6 +14,10 @@
     font-size: 14px;
 }
 
+// variable
+
+$main-clr: #ff4a52;
+
 .footer {
     max-width: 100%;
     height: auto;
@@ -31,10 +35,10 @@
                 display: flex;
                 justify-content: space-between;
                 .footer-logo {
-                    padding: 20px 0;
+                    padding: 37px 0;
                     a {
                         &:hover {
-                            color: #ff4a52;
+                            color: $main-clr;
                         }
                         img {
                             padding: 15px 0;
@@ -43,6 +47,10 @@
                     p {
                         @include footer-size;
                         padding: 10px 0;
+                        cursor: pointer;
+                        &:hover{
+                            color: $main-clr;
+                        }
                     }
                     a {
                         @include footer-size;
@@ -54,7 +62,7 @@
                             gap: 25px;
                             i {
                                 &:hover {
-                                    color: #ff4a52;
+                                    color: $main-clr;
                                 }
                             }
                         }
@@ -75,7 +83,7 @@
                             a {
                                 @include footer-size;
                                 &:hover {
-                                    color: #ff4a52;
+                                    color: $main-clr;
                                 }
                             }
                         }
@@ -102,7 +110,7 @@
                                 a {
                                     @include footer-size;
                                     &:hover {
-                                        color: #ff4a52;
+                                        color: $main-clr;
                                     }
                                 }
                             }
@@ -135,18 +143,24 @@
             hr {
                 max-width: 1000px;
                 text-align: center;
+                margin: 0 auto;
             }
             p {
                 text-align: center;
                 padding: 20px 0;
                 font-size: 14px;
                 color: #aab1b7;
-                a {
+                a{
                     color: rgb(253, 12, 12);
-                }
-                i{
                     &:hover{
-                        color: rgb(253, 12, 12);;
+                        color: #1ce6b6;
+                    }
+                }
+                i {
+                    cursor: pointer;
+                    color: rgb(253, 12, 12);
+                    &:hover{
+                        color: #1ce6b6;
                     }
                 }
             }
@@ -157,7 +171,7 @@
 @media only screen and(max-width: 992px) {
     .container {
         padding: 0 20px;
-        .footer-info{
+        .footer-info {
             display: flex;
             flex-direction: column;
             padding: 30px 10px;
@@ -165,18 +179,18 @@
     }
 }
 
-@media only screen and(max-width: 520px){
-    .footer-info{
+@media only screen and(max-width: 520px) {
+    .footer-info {
         display: flex;
         flex-direction: column;
-        .footer-second{
+        .footer-second {
             display: flex;
             flex-direction: column;
-            .instagram{
-                .insta-img{
-                    ul{
+            .instagram {
+                .insta-img {
+                    ul {
                         padding: 5px;
-                        li{
+                        li {
                             padding-bottom: 5px;
                         }
                     }
